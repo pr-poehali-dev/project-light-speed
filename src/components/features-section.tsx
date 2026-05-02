@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Индивидуальный дизайн",
+    description: "Любая форма, любой размер — воплощаем ваши идеи в реальность. Работаем по чертежам или разрабатываем модели с нуля.",
+    icon: "🎨",
+    badge: "На заказ",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Быстрое производство",
+    description: "Печать занимает от нескольких часов. Готовые изделия отправляем в течение 1-2 рабочих дней после оплаты заказа.",
+    icon: "⚡",
+    badge: "Скорость",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
+    title: "Прочные материалы",
+    description: "PLA, ABS, PETG, нейлон и гибкие пластики — подберём материал под ваши требования прочности и условий эксплуатации.",
+    icon: "🔩",
+    badge: "Качество",
+  },
+  {
+    title: "Точность до 0.1 мм",
+    description: "Профессиональные принтеры обеспечивают высочайшую точность печати для деталей, прототипов и декоративных изделий.",
+    icon: "🎯",
     badge: "Точность",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Широкий ассортимент",
+    description: "Декор, игрушки, запчасти, сувениры, органайзеры, прототипы — готовые товары и изделия под ваш заказ.",
+    icon: "🛒",
+    badge: "Ассортимент",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Постобработка",
+    description: "Шлифовка, покраска, грунтовка — придаём изделиям идеальный вид. Финишная обработка по вашим пожеланиям.",
+    icon: "✨",
+    badge: "Отделка",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему выбирают нас</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Качественная 3D-печать для бизнеса и частных заказов — быстро, точно, надёжно
           </p>
         </div>
 
@@ -60,14 +60,7 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <span className="text-3xl">{feature.icon}</span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>
